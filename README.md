@@ -11,8 +11,8 @@ This repository contains various lab assignments categorized by programming lang
 
 These assignments focus on fundamental concepts in C programming, including data structures, pointers, file handling, and more. The assignments are stored in the `C_Programming` folder.
 
-- **[P1A](./P1A.c)**: Introduction to C programming, arrays, and file operations in C.
-- **[P1B](./P1B.c)**: Advanced structures , Dynamic memory allocation and pointer usage in C.
+- **[P1A](./P1A)**: Introduction to C programming, arrays, and file operations in C.
+- **[P1B](./P1B)**: Advanced structures , Dynamic memory allocation and pointer usage in C.
 
 ---
 

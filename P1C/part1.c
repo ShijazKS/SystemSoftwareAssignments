@@ -106,7 +106,7 @@ int main() {
         switch(command){
             case 'i':
                 {
-                scanf("%[^,],%[^,],%[^,],%[^,],%d,%d,%d", &ISBN, title, author, genre, &accession_number, &year, &price);
+                scanf(" %[^,],%[^,],%[^,],%[^,],%d,%d,%d", &ISBN, title, author, genre, &accession_number, &year, &price);
                 root = insertBook(root, ISBN, title, author, genre, accession_number, year, price);
                 break;
                 }

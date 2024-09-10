@@ -69,6 +69,7 @@ void deleteMaxPricedBook() {
         printf("No books to delete.\n");
         return;
     }
+    printf("%s\n",pricelist[0].ISBN);
     pricelist[0] = pricelist[heapSize - 1];
     heapSize--;
 

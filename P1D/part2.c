@@ -99,7 +99,6 @@ void DFS(Graph* graph, int v, int* visited) {
 
 void graphTraversal(Graph* graph) {
     int* visited = (int*)malloc(graph->numBooks * sizeof(int));
-    
 
     for (int i = 0; i < graph->numBooks; i++) {
         visited[i] = 0;
@@ -118,26 +117,27 @@ void graphTraversal(Graph* graph) {
 int main() {
     int n;
     scanf("%d", &n);
+    getchar(); 
 
     Graph* graph = createGraph(n);
 
-    
     for (int i = 0; i < n; i++) {
         char isbn[20], author[50];
-        scanf("%s %s", isbn, author);
+
+        scanf("%19[^,], %49[^\n]", isbn, author);
+        getchar(); 
         graph->adjList[i] = createBook(isbn, author);
     }
 
-    
     createBookGraph(graph);
 
     char command;
     char author[50];
     while (1) {
-        scanf(" %c", &command);
+        scanf("%c", &command);
 
         if (command == 'p') {  
-            scanf("%s", author);
+            scanf(" %49[^\n]", author);
             printBooksByAuthor(graph, author);
 
         } else if (command == 'd') {  
